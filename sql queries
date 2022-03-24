@@ -20,7 +20,6 @@ create table if not exists Треки (
 	id serial primary key,
 	name varchar(225),
 	duration int,
-	id_исполнителя int references public.Альбомы(id),
-	album_year int
+	id_исполнителя int references public.Альбомы(id)
 );
 
